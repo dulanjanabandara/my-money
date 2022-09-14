@@ -6,7 +6,7 @@
 
 .login-form label {
   display: block;
-  margin-bottom: 6px;
+  margin: 30px auto;
 }
 
 .login-form span {

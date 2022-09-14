@@ -12,6 +12,7 @@ export default function Login() {
   };
 
   return (
+    // since we have "-" in the class name
     <form onSubmit={handleSubmit} className={styles["login-form"]}>
       <h2>Login</h2>
       <label>
@@ -34,5 +35,5 @@ export default function Login() {
 
       <button className="btn">Login</button>
     </form>
-  ); // since we have "-" in the class name
+  );
 }
