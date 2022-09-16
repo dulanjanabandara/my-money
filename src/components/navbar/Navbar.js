@@ -25,8 +25,8 @@ export default function Navbar() {
 
         {user && (
           <>
-            <li>Hello, {user.user.displayName}</li>
-            <p>{console.log(user.user.displayName)}</p>
+            <li>Hello, {user.displayName}</li>
+            <p>{console.log(user.displayName)}</p>
             <li>
               <button className="btn" onClick={logout}>
                 Logout
