@@ -18,4 +18,9 @@ firebase.initializeApp(firebaseConfig);
 const projectFirestore = firebase.firestore();
 const projectAuth = firebase.auth();
 
-export { projectFirestore, projectAuth };
+// timestamp
+// this returns a function and stored in the timestamp variable. When we invoke it, then it's going to create a timestamp date property.
+// this is a special type of date property used in firestore database because we don't just send through a date object. If we do that, firestore won't be able to order them correctly.
+const timestamp = firebase.firestore.Timestamp;
+
+export { projectFirestore, projectAuth, timestamp };
